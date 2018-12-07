@@ -21,7 +21,8 @@ don't use platform-specific APIs.
 
 ```js
 {
-	uri: props.uri
+	uri: ?string = http://www.placecage.com/c/40/40
+	size: number = 40
 }
 ```
 
