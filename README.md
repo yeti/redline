@@ -17,14 +17,11 @@ don't use platform-specific APIs.
 
 ### Component Library
 
-#### Parameters for `<PopupMenu />`
+#### Parameters for `<ProfileImage />`
 
 ```js
 {
-	width: ?number = 200,
-	height: ?(number | 'auto') = 'auto', // If auto it's minimized to rows size
-	direction: ?('top' | 'bottom' | 'left' | 'right') = 'top',
-	button: ReactNode
+	uri: props.uri
 }
 ```
 
