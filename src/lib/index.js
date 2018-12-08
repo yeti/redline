@@ -1,2 +1,7 @@
-import TextInput from "./TextInput";
-export { TextInput };
+import ProfileImage from "./ProfileImage";
+
+
+
+export { 
+    ProfileImage
+};
