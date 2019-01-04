@@ -1,5 +1,14 @@
 # redline
-React / React Native Component Library using React Primitives
+
+> reusable react component library
+
+[![NPM](https://img.shields.io/npm/v/redline.svg)](https://www.npmjs.com/package/redline) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save redline
+```
 
 
 ## What is this?
@@ -22,3 +31,22 @@ don't use platform-specific APIs.
 
 
 
+## Usage
+
+```tsx
+import * as React from 'react'
+
+import MyComponent from 'redline'
+
+class Example extends React.Component {
+  render () {
+    return (
+      <MyComponent />
+    )
+  }
+}
+```
+
+## License
+
+MIT © [yeti](https://github.com/yeti)
