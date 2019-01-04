@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save redline
+yarn add @yeti-dev/redline
 ```
 
 
