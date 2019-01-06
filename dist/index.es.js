@@ -1,4 +1,5 @@
 import { createElement, Component } from 'react';
+import { View, Text, StyleSheet } from 'react-primitives';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -29,37 +30,6 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css = "/* add css styles here (optional) */\n\n.styles_test__32Qsm {\n  display: inline-block;\n  margin: 2em auto;\n  border: 2px solid #000;\n  font-size: 2em;\n}\n";
-var styles = {"test":"styles_test__32Qsm"};
-styleInject(css);
-
 /**
  * @class ExampleComponent
  */
@@ -70,12 +40,20 @@ var ExampleComponent = /** @class */ (function (_super) {
     }
     ExampleComponent.prototype.render = function () {
         var text = this.props.text;
-        return (createElement("div", { className: styles.test },
-            "Example Component: ",
-            text));
+        return (createElement(View, null,
+            createElement(Text, { style: styles.test },
+                "Example Component: ",
+                text)));
     };
     return ExampleComponent;
 }(Component));
+var styles = StyleSheet.create({
+    test: {
+        fontSize: 16,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
 
 export default ExampleComponent;
 //# sourceMappingURL=index.es.js.map
