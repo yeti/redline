@@ -4,7 +4,7 @@ import { Image } from 'react-primitives';
 
 export type Props = { uri: string, size: number }
 
-const ProfileImage = (props: Props) => (
+const ProfileImage: React.SFC<Props> = (props: Props) => (
     <Image
         style={{
             width: props.size,
