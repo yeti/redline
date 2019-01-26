@@ -1,6 +1,6 @@
 {
   "name": "@yeti-dev/redline",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "reusable react component library",
   "author": "yeti",
   "license": "MIT",
@@ -23,8 +23,7 @@
   },
   "dependencies": {
     "@types/react-primitives": "^0.6.2",
-    "react-art": "^16.7.0",
-    "react-native-web": "^0.9.13"
+    "react-primitives": "^0.7.0"
   },
   "peerDependencies": {
     "@types/react-primitives": "^0.6.2",
