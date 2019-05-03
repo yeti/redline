@@ -42,7 +42,7 @@ TextComponent.defaultProps = {
 
 // Styles
 // ----------------------------------------------------------------------------
-const systemFont = "system font";
+const systemFont = "System";
 
 const styles = StyleSheet.create({
   // fonts
