@@ -1,6 +1,6 @@
 {
   "name": "@yeti-dev/redline",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "reusable react component library",
   "author": "yeti",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
+    "publish": "rollup -c && npm publish --access=public",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
